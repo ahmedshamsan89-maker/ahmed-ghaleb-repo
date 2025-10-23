@@ -1,0 +1,181 @@
+
+*{
+    margin:0;
+    padding: 0;
+   
+    font-family: "Tajawal", sans-serif;
+   font-weight: 600;
+    box-sizing: border-box;
+   font-style: normal;
+}
+
+.header{
+    padding: 10px;
+    height:100px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+}
+
+.logo img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 900;
+   
+   
+}
+
+.navbar a {
+     text-decoration: none;
+}
+.navbar a{
+    color: white;
+}
+.banner {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+ 
+    
+}
+ 
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap:60px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    padding: 100px;
+    align-items: center;
+    
+  
+    
+}
+
+.product-item{
+    width: 250px;;
+   display: flex;
+   flex-direction: column;
+    background-color: white;
+    color: black;
+   border:  3px solid #777;
+   border-radius: 1rem;
+   box-shadow: 0 0 5px #777, 0 0 10px #999, 0 0 15px #aaa;
+    overflow: hidden; 
+     transition: all 0.3s ease;
+    
+
+}
+
+
+
+
+
+
+.product-item img{ 
+
+    max-width: 100%;
+    height: 200px;
+    padding: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+    
+}
+
+.product-item p {
+    padding: 0 15px 15px 15px;
+    text-align: justify;
+    color: black;
+    font-size: 16px; 
+    font-weight: 400;
+    margin: auto;
+   
+    
+}
+
+.products-container a{
+     text-decoration: none;
+}
+.product-item:hover{
+  transform: translateY(-8px) scale(1.03);
+ 
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+
+
+
+}
+.overlay {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  color: black;
+
+
+}
+.btn.btn-success {
+  color: white !important;
+  text-decoration: none;
+}
+  
+footer {
+    height: 20vh;
+    background-color: #333;
+    color: white;
+   
+   
+     border-top: 3px solid #37475a;
+}
+footer p{
+    text-align: center;
+    
+}
+.more{
+   display: flex;
+   justify-content: center;
+    transition: all 0.3s ease;
+
+}
+.more-btn {
+   
+    justify-content: center;
+   
+  border: none;
+ background: transparent;      
+         
+  font-size: 70px; 
+  font-weight: 100;                    
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+    
+
+}
+.more-btn:hover{
+  color: #00bcd4;      
+  transform: translateY(-4px) scale(1.1);
+ 
+}
+
+.more-btn a {
+    text-decoration: none;
+    color:  lightblue;       ;
+}
+
+h2{
+    margin-top: 50px;
+    margin-right: 10px;
+}
