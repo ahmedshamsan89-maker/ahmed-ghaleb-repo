@@ -1,0 +1,142 @@
+/* هذا هو ملف CSS بتصميم (Geometric/Professional Look) */
+
+@import url('https://fonts/googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* إعادة تعيين أساسي */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* الألوان الأساسية */
+:root {
+    --color-primary: #3498db; /* الأزرق السماوي الأساسي */
+    --color-accent: #2ecc71;  /* لمسة خضراء للنجاح (لأزرار أخرى مثلاً) */
+    --color-bg: #f5f7fa;     /* خلفية رمادية فاتحة جداً */
+    --color-text-dark: #2c3e50; /* نص داكن */
+    --color-text-light: #7f8c8d; /* نص ثانوي */
+    --color-border: #bdc3c7;   /* لون الحدود */
+}
+
+/* تنسيق الخلفية وتوسيط البطاقة */
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: var(--color-bg); */
+    background-color: #333;
+    padding: 20px;
+}
+
+/* ------------------------------------------- */
+/* تصميم بطاقة تسجيل الدخول (Clean Professional Card) */
+/* ------------------------------------------- */
+
+.login-container {
+    width: 380px; /* عرض أصغر وأكثر تركيزاً */
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px; /* حواف حادة نسبياً */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: var(--color-text-dark);
+    text-align: center;
+    border-top: 5px solid var(--color-primary); /* شريط علوي بلون مميز */
+}
+
+.login-heading {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: var(--color-text-dark);
+}
+
+.login-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: var(--color-text-light);
+}
+
+/* تنسيق حقول الإدخال */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px; /* حواف مربعة أكثر احترافية */
+    background: #fcfcfc;
+    color: var(--color-text-dark);
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: var(--color-primary); /* حدود باللون السماوي عند التركيز */
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* تنسيق الزر الرئيسي */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary); /* الزر بلون سماوي أساسي */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    letter-spacing: 0.5px;
+}
+
+.login-btn:hover {
+    background-color: #2980b9; /* أزرق أغمق عند المرور */
+}
+
+.login-btn:active {
+    transform: translateY(1px);
+}
+
+/* روابط التسجيل والنسيان */
+.signup-para {
+    font-size: 13px;
+    margin-top: 20px;
+    color: var(--color-text-light);
+}
+
+.signup-para a, .footer-link a {
+    color: var(--color-primary); /* الروابط بلون سماوي */
+    font-weight: 500;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.signup-para a:hover, .footer-link a:hover {
+    text-decoration: underline;
+}
+
+.footer-link {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid var(--color-border);
+    font-size: 13px;
+    color: var(--color-text-light);
+}
